@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.5",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseout","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),await this.T(),await this.F(),await this.j(),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise(t=>setTimeout(t,500-Date.now()+this.lastTouchEnd)),this.I(),this.H(),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))},{isRocket:!0})}o(){window.addEventListener("pageshow",t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0},{isRocket:!0}),window.addEventListener("pagehide",()=>{this.onFirstUserAction=null},{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",function i(o){o.changedTouches[0]&&t.changedTouches[0]&&Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}),"INPUT"===o.target.tagName&&"text"===o.target.type||(o.target.dispatchEvent(new TouchEvent("touchend",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new MouseEvent("mouseover",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1,clientX:o.changedTouches[0].clientX,clientY:o.changedTouches[0].clientY})),event.preventDefault()))},{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,t.composedPath&&t.composedPath()[0].getRootNode()instanceof ShadowRoot&&(t.rocketTarget=t.composedPath()[0]),this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach(t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.addEventListener("visibilitychange",this.userEventHandler,{isRocket:!0})}U(){this.userEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.removeEventListener("visibilitychange",this.userEventHandler,{isRocket:!0}),this.savedUserEvents.forEach(t=>{(t.rocketTarget||t.target).dispatchEvent(new window[t.constructor.name](t.type,t))})}m(){const t="return false",e=Array.from(this.attributeEvents,t=>"data-rocket-"+t),i="["+this.attributeEvents.join("],[")+"]",o="[data-rocket-"+this.attributeEvents.join("],[data-rocket-")+"]",s=(e,i,o)=>{o&&o!==t&&(e.setAttribute("data-rocket-"+i,o),e["rocket"+i]=new Function("event",o),e.setAttribute(i,t))};new MutationObserver(t=>{for(const n of t)"attributes"===n.type&&(n.attributeName.startsWith("data-rocket-")||this.everythingLoaded?n.attributeName.startsWith("data-rocket-")&&this.everythingLoaded&&this.N(n.target,n.attributeName.substring(12)):s(n.target,n.attributeName,n.target.getAttribute(n.attributeName))),"childList"===n.type&&n.addedNodes.forEach(t=>{if(t.nodeType===Node.ELEMENT_NODE)if(this.everythingLoaded)for(const i of[t,...t.querySelectorAll(o)])for(const t of i.getAttributeNames())e.includes(t)&&this.N(i,t.substring(12));else for(const e of[t,...t.querySelectorAll(i)])for(const t of e.getAttributeNames())this.attributeEvents.includes(t)&&s(e,t,e.getAttribute(t))})}).observe(document,{subtree:!0,childList:!0,attributeFilter:[...this.attributeEvents,...e]})}I(){this.attributeEvents.forEach(t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach(e=>{this.N(e,t)})})}N(t,e){const i=t.getAttribute("data-rocket-"+e);i&&(t.setAttribute(e,i),t.removeAttribute("data-rocket-"+e))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):(t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o}),"mouseenter"!==e&&"mouseleave"!==e||t.originalAddEventListener.call(this,e,t.savedUserEvents.push,o))},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}J(t,e){this.savedEventListeners=this.savedEventListeners.filter(i=>{let o=i.type,s=i.target||window;return e!==o||t!==s||(this.B(o,s)&&(i.type="rocket-"+o),this.$(i),!1)})}H(){EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener,this.savedEventListeners.forEach(t=>this.$(t))}$(t){t.remove?this.originalRemoveEventListener.call(t.target,t.type,t.func,t.options):this.originalAddEventListener.call(t.target,t.type,t.func,t.options)}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map(t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e})),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,()=>{e[t].forEach(t=>t())},{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout(()=>i.bind(document)(o)):i.bind(document)(o)}return"function"==typeof i&&(t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s)),this},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise(t=>{this.userActionTriggered?t():this.onFirstUserAction=t})}async L(){return new Promise(t=>{document.addEventListener("DOMContentLoaded",()=>{this.realDomReadyFired=!0,t()},{isRocket:!0})})}async j(){return this.realWindowLoadedFired?Promise.resolve():new Promise(t=>{window.addEventListener("load",t,{isRocket:!0})})}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver(t=>{for(const e of t)e.addedNodes.forEach(t=>{"SCRIPT"!==t.tagName||!t.src||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise(e=>{const i=()=>{const i=this.pendingScripts.findIndex(e=>e.script===t);i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)})})})}),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async F(){await this.X(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.F()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach(e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this.Y(t,"preconnect")}async G(t){if(await this.K(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise(e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))}),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",()=>{i.setAttribute("data-rocket-status","failed-network"),e()},{isRocket:!0}),setTimeout(()=>{i.isConnected||e()},1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.G(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())},{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}});t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.G(e),this.C(t)):Promise.resolve()}O(){this.Y([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}Y(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach(t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}}),document.head.appendChild(o)}W(){this.trash.forEach(t=>t.remove())}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(document,"DOMContentLoaded"),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.K(),this.J(window,"DOMContentLoaded"),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(window,"load"),window.dispatchEvent(new Event("rocket-load")),await this.K(),window.rocketonload&&window.rocketonload(),await this.K(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this.K(),this.J(window,"pageshow");const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.K(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async K(){Date.now()-this.lastBreath>45&&(await this.X(),this.lastBreath=Date.now())}async X(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}B(t,e=window){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();
+</script>
+	
+		<title>Kits Festas Prontos Para Vender &#8211; Karla Vieira e Alice Ponciano</title>
+<link data-rocket-prefetch href="https://scripts.converteai.net" rel="dns-prefetch">
+<link data-rocket-prefetch href="https://cdn.converteai.net" rel="dns-prefetch">
+<link data-rocket-preload as="style" data-wpr-hosted-gf-parameters="family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CInter%20Tight%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CInter%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CInstrument%20Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=swap" href="https://vendakitsfestas.com.br/wp-content/cache/fonts/1/google-fonts/css/3/1/3/e5812dddcbfab2530596c05bf0545.css" rel="preload">
+<link crossorigin data-rocket-preload as="font" href="https://vendakitsfestas.com.br/wp-content/cache/fonts/1/google-fonts/fonts/s/intertight/v9/NGSwv5HMAFg6IuGlBNMjxLsH8ag.woff2" rel="preload">
+<link data-wpr-hosted-gf-parameters="family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CInter%20Tight%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CInter%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CInstrument%20Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=swap" href="https://vendakitsfestas.com.br/wp-content/cache/fonts/1/google-fonts/css/3/1/3/e5812dddcbfab2530596c05bf0545.css" media="print" onload="this.media=&#039;all&#039;" rel="stylesheet">
+<noscript data-wpr-hosted-gf-parameters=""><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CInter%20Tight%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CInter%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CInstrument%20Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap"></noscript><link rel="preload" data-rocket-preload as="image" href="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-1.avif" fetchpriority="high">
+<meta name='robots' content='max-image-preview:large' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Feed para Kits Festas Prontos Para Vender &raquo;" href="https://vendakitsfestas.com.br/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para Kits Festas Prontos Para Vender &raquo;" href="https://vendakitsfestas.com.br/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://vendakitsfestas.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fvendakitsfestas.com.br%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://vendakitsfestas.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fvendakitsfestas.com.br%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:root { --wp--style--global--content-size: 800px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-icon svg){width: 24px;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link data-minify="1" rel='stylesheet' id='hostinger-reach-subscription-block-css' href='https://vendakitsfestas.com.br/wp-content/cache/min/1/wp-content/plugins/hostinger-reach/frontend/dist/blocks/subscription.css?ver=1787862697' media='all' />
+<link data-minify="1" rel='stylesheet' id='hello-elementor-css' href='https://vendakitsfestas.com.br/wp-content/cache/min/1/wp-content/themes/hello-elementor/assets/css/reset.css?ver=1787862697' media='all' />
+<link data-minify="1" rel='stylesheet' id='hello-elementor-theme-style-css' href='https://vendakitsfestas.com.br/wp-content/cache/min/1/wp-content/themes/hello-elementor/assets/css/theme.css?ver=1787862697' media='all' />
+<link data-minify="1" rel='stylesheet' id='hello-elementor-header-footer-css' href='https://vendakitsfestas.com.br/wp-content/cache/min/1/wp-content/themes/hello-elementor/assets/css/header-footer.css?ver=1787862697' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://vendakitsfestas.com.br/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.2.2' media='all' />
+<style id="elementor-frontend-inline-css">
+.e-heading-base a, .e-paragraph-base a { all: unset; cursor: pointer; }form[data-element_type="e-form"].form-state-success [data-element_type="e-form-success-message"],form[data-element_type="e-form"].form-state-error [data-element_type="e-form-error-message"]{ display: block; }
+.e-form-textarea-base:not([data-resizable]) { resize: none; } .e-form-submit-button-base { cursor: pointer; box-sizing: border-box; }
+/*# sourceURL=elementor-frontend-inline-css */
+</style>
+<link rel='stylesheet' id='elementor-post-5-css' href='https://vendakitsfestas.com.br/wp-content/uploads/elementor/css/post-5.css?ver=1787862696' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='https://vendakitsfestas.com.br/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=4.2.2' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='https://vendakitsfestas.com.br/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=4.2.2' media='all' />
+<link rel='stylesheet' id='widget-icon-list-css' href='https://vendakitsfestas.com.br/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=4.2.2' media='all' />
+<link data-minify="1" rel='stylesheet' id='swiper-css' href='https://vendakitsfestas.com.br/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=1787862697' media='all' />
+<link rel='stylesheet' id='e-swiper-css' href='https://vendakitsfestas.com.br/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=4.2.2' media='all' />
+<link rel='stylesheet' id='widget-image-carousel-css' href='https://vendakitsfestas.com.br/wp-content/plugins/elementor/assets/css/widget-image-carousel.min.css?ver=4.2.2' media='all' />
+<link rel='stylesheet' id='widget-spacer-css' href='https://vendakitsfestas.com.br/wp-content/plugins/elementor/assets/css/widget-spacer.min.css?ver=4.2.2' media='all' />
+<link rel='stylesheet' id='widget-animated-headline-css' href='https://vendakitsfestas.com.br/wp-content/plugins/elementor-pro/assets/css/widget-animated-headline.min.css?ver=4.0.4' media='all' />
+<link rel='stylesheet' id='widget-icon-box-css' href='https://vendakitsfestas.com.br/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css?ver=4.2.2' media='all' />
+<link rel='stylesheet' id='widget-nested-accordion-css' href='https://vendakitsfestas.com.br/wp-content/plugins/elementor/assets/css/widget-nested-accordion.min.css?ver=4.2.2' media='all' />
+<link rel='stylesheet' id='elementor-post-12-css' href='https://vendakitsfestas.com.br/wp-content/uploads/elementor/css/post-12.css?ver=1787862697' media='all' />
+<link rel='stylesheet' id='base-desktop-css' href='https://vendakitsfestas.com.br/wp-content/uploads/elementor/css/base-desktop.css?ver=6a909ea93d2a8' media='all' />
+<link rel='stylesheet' id='base-mobile-css' href='https://vendakitsfestas.com.br/wp-content/uploads/elementor/css/base-mobile.css?ver=6a909ea93d2a8' media='(max-width:767px)' />
+<style id="rocket-lazyload-inline-css">
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:var(--wpr-bg-1d22c47d-7551-47b5-bde4-57db6909267e) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}.wp-embed-responsive .wp-has-aspect-ratio .rll-youtube-player{position:absolute;padding-bottom:0;width:100%;height:100%;top:0;bottom:0;left:0;right:0}
+/*# sourceURL=rocket-lazyload-inline-css */
+</style>
+
+
+
+
+
+<script id="jquery-core-js" src="https://vendakitsfestas.com.br/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" data-rocket-defer defer></script>
+<script id="jquery-migrate-js" src="https://vendakitsfestas.com.br/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" data-rocket-defer defer></script>
+<link rel="https://api.w.org/" href="https://vendakitsfestas.com.br/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://vendakitsfestas.com.br/wp-json/wp/v2/pages/12" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://vendakitsfestas.com.br/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.0.4" />
+<link rel="canonical" href="https://vendakitsfestas.com.br/" />
+<link rel='shortlink' href='https://vendakitsfestas.com.br/' />
+<!-- HFCM by 99 Robots - Snippet # 1: Pixel -->
+<!-- Meta Pixel Code -->
+<script type="text/rocketlazyloadscript">
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1818120618893070');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1818120618893070&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- /end HFCM by 99 Robots -->
+<!-- HFCM by 99 Robots - Snippet # 2: UTMFY -->
+<script data-minify="1"
+  src="https://vendakitsfestas.com.br/wp-content/cache/min/1/scripts/utms/latest.js?ver=1787605236"
+  data-utmify-prevent-subids
+ async
+ defer
+></script>
+<!-- /end HFCM by 99 Robots -->
+<!-- HFCM by 99 Robots - Snippet # 3: UTMS HOTMART -->
+<script type="text/rocketlazyloadscript">
+(function () {
+  const HOTMART_DOMAINS = [
+    "pay.hotmart.com",
+    "checkout.hotmart.com",
+    "go.hotmart.com",
+    "hotm.art"
+  ];
+
+  function buildXcod() {
+    const url = new URL(window.location.href);
+
+    const source = url.searchParams.get("utm_source") || "";
+    const medium = url.searchParams.get("utm_medium") || "";
+    const campaign = url.searchParams.get("utm_campaign") || "";
+    const content = url.searchParams.get("utm_content") || "";
+    const term = url.searchParams.get("utm_term") || "";
+
+    // monta do jeito que quiser (aqui está padrão raiz)
+    return [source, medium, campaign, content, term]
+      .filter(Boolean)
+      .join("_");
+  }
+
+  function isHotmart(href) {
+    try {
+      const u = new URL(href);
+      return HOTMART_DOMAINS.includes(u.hostname);
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function decorate(href) {
+    try {
+      const u = new URL(href);
+      const xcod = buildXcod();
+
+      if (!xcod) return href;
+
+      u.searchParams.set("xcod", xcod);
+
+      return u.toString();
+    } catch (e) {
+      return href;
+    }
+  }
+
+  function fixLinks() {
+    document.querySelectorAll("a[href]").forEach(a => {
+      const href = a.getAttribute("href");
+      if (!isHotmart(href)) return;
+
+      a.setAttribute("href", decorate(href));
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", fixLinks);
+
+  window.addEventListener("load", () => {
+    fixLinks();
+    setTimeout(fixLinks, 800);
+    setTimeout(fixLinks, 1500);
+  });
+
+  document.addEventListener("click", function (e) {
+    const a = e.target.closest("a");
+    if (!a) return;
+
+    const href = a.getAttribute("href");
+    if (!isHotmart(href)) return;
+
+    const finalUrl = decorate(href);
+
+    e.preventDefault();
+    window.location.href = finalUrl;
+  }, true);
+
+})();
+</script>
+<!-- /end HFCM by 99 Robots -->
+<!-- HFCM by 99 Robots - Snippet # 4: VK Metrics -->
+<script type="text/rocketlazyloadscript">
+!function(w,d,c,u){
+  (w.vkPixelSales=w.vkPixelSales||{_q:[]})._q.push(['init',c]);
+  (w.vkPageViewPixel=w.vkPageViewPixel||{_q:[]})._q.push(['init',c,'page_view']);
+  ['https://cf.vkdigital.com.br/sales_pixel.js?v=56','https://cf.vkdigital.com.br/event_pageview.js'].forEach(function(src,i){
+    var s=d.createElement('script');
+    s.src=src;
+    s.async=1;
+    if(i===0) {
+      s.setAttribute('data-no-xcod-url','');
+      s.setAttribute('data-vk-no-sck','');
+      s.setAttribute('data-sticky-paid-source','');
+      s.setAttribute('data-global-tracking-cache','');
+    }
+    d.head.appendChild(s);
+  });
+}(window,document,'Xz8QXtcE3pLMInMNhcdq');
+</script>
+<!-- /end HFCM by 99 Robots -->
+<meta name="generator" content="Elementor 4.2.2; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /><style id="wpr-lazyload-bg-container"></style><style id="wpr-lazyload-bg-exclusion"></style>
+<noscript>
+<style id="wpr-lazyload-bg-nostyle">.rll-youtube-player .play{--wpr-bg-1d22c47d-7551-47b5-bde4-57db6909267e: url('https://vendakitsfestas.com.br/wp-content/plugins/wp-rocket/assets/img/youtube.png');}</style>
+</noscript>
+<script type="application/javascript">const rocket_pairs = [{"selector":".rll-youtube-player .play","style":".rll-youtube-player .play{--wpr-bg-1d22c47d-7551-47b5-bde4-57db6909267e: url('https:\/\/vendakitsfestas.com.br\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png');}","hash":"1d22c47d-7551-47b5-bde4-57db6909267e","url":"https:\/\/vendakitsfestas.com.br\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png"}]; const rocket_excluded_pairs = [];</script><meta name="generator" content="WP Rocket 3.21.2" data-wpr-features="wpr_lazyload_css_bg_img wpr_delay_js wpr_defer_js wpr_minify_js wpr_lazyload_images wpr_lazyload_iframes wpr_preconnect_external_domains wpr_auto_preload_fonts wpr_oci wpr_image_dimensions wpr_minify_css wpr_cdn wpr_preload_links wpr_host_fonts_locally wpr_desktop" /></head>
+<body class="home wp-singular page-template page-template-elementor_canvas page page-id-12 wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-canvas elementor-kit-5 elementor-page elementor-page-12">
+			<div  data-elementor-type="wp-page" data-elementor-id="12" class="elementor elementor-12" data-elementor-post-type="page">
+				<div  class="elementor-element elementor-element-ed5e487 e-flex e-con-boxed e-con e-parent" data-id="ed5e487" data-element_type="container" data-e-type="container">
+					<div  class="e-con-inner">
+				<div class="elementor-element elementor-element-2b32bb6 elementor-widget elementor-widget-html" data-id="2b32bb6" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<script type="text/rocketlazyloadscript">!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
+<link rel="preload" href="https://scripts.converteai.net/f6cd1220-c575-4270-ba58-b10c6670c7e8/players/6a85ea92ffcc1080920c98a5/v4/player.js" as="script">
+<link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+<link rel="preload" href="https://cdn.converteai.net/f6cd1220-c575-4270-ba58-b10c6670c7e8/6a85ea8b22efeaf7e27c716c/main.m3u8" as="fetch">
+<link rel="dns-prefetch" href="https://cdn.converteai.net">
+<link rel="dns-prefetch" href="https://scripts.converteai.net">
+<link rel="dns-prefetch" href="https://images.converteai.net">
+<link rel="dns-prefetch" href="https://license.vturb.com">				</div>
+				<div class="elementor-element elementor-element-5acd7cf6 elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="5acd7cf6" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img fetchpriority="high" decoding="async" width="375" height="103" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-1.avif" class="attachment-large size-large wp-image-15" alt="" />															</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-2d5df8d5 e-flex e-con-boxed e-con e-parent" data-id="2d5df8d5" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+					<div  class="e-con-inner">
+				<div class="elementor-element elementor-element-36b15d82 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="36b15d82" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Baixe mais de<font color="#C25472"><b> 100 Kits Festas prontos para vender</b></font>   e comece a trabalhar em casa, mesmo sem experiência e sem saber criar artes</h2>				</div>
+		<div class="elementor-element elementor-element-9ecd877 e-con-full e-flex e-con e-child" data-id="9ecd877" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-e6a33a5 elementor-align-center elementor-mobile-align-start elementor-widget__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="e6a33a5" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Feitos para cortar na tesoura ou na silhouette.</span>
+									</li>
+						</ul>
+						</div>
+				<div class="elementor-element elementor-element-e76a6ba elementor-align-center elementor-mobile-align-start elementor-widget__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="e76a6ba" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Arquivos para computador e para celular.</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-53ab942 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-html" data-id="53ab942" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<vturb-smartplayer id="vid-6a85ea92ffcc1080920c98a5" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"><div class="vturb-player-placeholder" style="position: relative; width: 100%; padding: 177.77777777777777% 0 0; z-index: 0; background-color: black;"></div></vturb-smartplayer> <script type="text/rocketlazyloadscript" data-rocket-type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/f6cd1220-c575-4270-ba58-b10c6670c7e8/players/6a85ea92ffcc1080920c98a5/v4/player.js", s.async=!0,document.head.appendChild(s); </script>				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-c48610d e-flex e-con-boxed e-con e-parent" data-id="c48610d" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div  class="e-con-inner">
+				<div class="elementor-element elementor-element-d96def0 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="d96def0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Alguns temas de <font color="#FF9FBC"><b>Kits Festas Prontos para Vender </b></font>  que você terá acesso:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</h2>				</div>
+				<div class="elementor-element elementor-element-18d660a elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="18d660a" data-element_type="widget" data-e-type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;4&quot;,&quot;slides_to_show_mobile&quot;:&quot;2&quot;,&quot;slides_to_scroll&quot;:&quot;2&quot;,&quot;image_spacing_custom&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:16,&quot;sizes&quot;:[]},&quot;image_spacing_custom_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:6,&quot;sizes&quot;:[]},&quot;navigation&quot;:&quot;both&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;speed&quot;:500,&quot;image_spacing_custom_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="image-carousel.default">
+							<div class="elementor-image-carousel-wrapper swiper" role="region" aria-roledescription="carousel" aria-label="Carrossel de imagens" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 de 13"><figure class="swiper-slide-inner"><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201920%201920'%3E%3C/svg%3E" alt="chatgpt-image-12-de-jan.-de-2026-10_38_10-1-cS59fvXR26T3BExn" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-12-de-jan.-de-2026-10_38_10-1-cS59fvXR26T3BExn.webp" /><noscript><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-12-de-jan.-de-2026-10_38_10-1-cS59fvXR26T3BExn.webp" alt="chatgpt-image-12-de-jan.-de-2026-10_38_10-1-cS59fvXR26T3BExn" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 de 13"><figure class="swiper-slide-inner"><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201920%201920'%3E%3C/svg%3E" alt="chatgpt-image-14-de-jan.-de-2026-14_37_27-3uY8ntGEiSr2UhsB" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-14-de-jan.-de-2026-14_37_27-3uY8ntGEiSr2UhsB.webp" /><noscript><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-14-de-jan.-de-2026-14_37_27-3uY8ntGEiSr2UhsB.webp" alt="chatgpt-image-14-de-jan.-de-2026-14_37_27-3uY8ntGEiSr2UhsB" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 de 13"><figure class="swiper-slide-inner"><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201920%201920'%3E%3C/svg%3E" alt="chatgpt-image-14-de-jan.-de-2026-14_40_44-0Y826kSsThgMGbfK" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-14-de-jan.-de-2026-14_40_44-0Y826kSsThgMGbfK.webp" /><noscript><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-14-de-jan.-de-2026-14_40_44-0Y826kSsThgMGbfK.webp" alt="chatgpt-image-14-de-jan.-de-2026-14_40_44-0Y826kSsThgMGbfK" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 de 13"><figure class="swiper-slide-inner"><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201920%201920'%3E%3C/svg%3E" alt="chatgpt-image-14-de-jan.-de-2026-14_54_45-F08Qe9hMqcGFtcHU" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-14-de-jan.-de-2026-14_54_45-F08Qe9hMqcGFtcHU.webp" /><noscript><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-14-de-jan.-de-2026-14_54_45-F08Qe9hMqcGFtcHU.webp" alt="chatgpt-image-14-de-jan.-de-2026-14_54_45-F08Qe9hMqcGFtcHU" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 de 13"><figure class="swiper-slide-inner"><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201920%201920'%3E%3C/svg%3E" alt="chatgpt-image-14-de-jan.-de-2026-14_57_26-8FiWQ3mGkAbomFEQ" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-14-de-jan.-de-2026-14_57_26-8FiWQ3mGkAbomFEQ.webp" /><noscript><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-14-de-jan.-de-2026-14_57_26-8FiWQ3mGkAbomFEQ.webp" alt="chatgpt-image-14-de-jan.-de-2026-14_57_26-8FiWQ3mGkAbomFEQ" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 de 13"><figure class="swiper-slide-inner"><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201920%201920'%3E%3C/svg%3E" alt="chatgpt-image-14-de-jan.-de-2026-15_00_57-3kK72eCtNWhTBT9p" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-14-de-jan.-de-2026-15_00_57-3kK72eCtNWhTBT9p.webp" /><noscript><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-14-de-jan.-de-2026-15_00_57-3kK72eCtNWhTBT9p.webp" alt="chatgpt-image-14-de-jan.-de-2026-15_00_57-3kK72eCtNWhTBT9p" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 de 13"><figure class="swiper-slide-inner"><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201920%201920'%3E%3C/svg%3E" alt="chatgpt-image-14-de-jan.-de-2026-15_03_13-HMfIAFfVfxfiAmwG" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-14-de-jan.-de-2026-15_03_13-HMfIAFfVfxfiAmwG.webp" /><noscript><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-14-de-jan.-de-2026-15_03_13-HMfIAFfVfxfiAmwG.webp" alt="chatgpt-image-14-de-jan.-de-2026-15_03_13-HMfIAFfVfxfiAmwG" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="8 de 13"><figure class="swiper-slide-inner"><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201920%201920'%3E%3C/svg%3E" alt="chatgpt-image-14-de-jan.-de-2026-15_06_06-kHRos865jWtgKMft" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-14-de-jan.-de-2026-15_06_06-kHRos865jWtgKMft.webp" /><noscript><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-14-de-jan.-de-2026-15_06_06-kHRos865jWtgKMft.webp" alt="chatgpt-image-14-de-jan.-de-2026-15_06_06-kHRos865jWtgKMft" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="9 de 13"><figure class="swiper-slide-inner"><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201920%201920'%3E%3C/svg%3E" alt="chatgpt-image-14-de-jan.-de-2026-15_13_42-gC2HU1J71g2gupKz" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-14-de-jan.-de-2026-15_13_42-gC2HU1J71g2gupKz.webp" /><noscript><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-14-de-jan.-de-2026-15_13_42-gC2HU1J71g2gupKz.webp" alt="chatgpt-image-14-de-jan.-de-2026-15_13_42-gC2HU1J71g2gupKz" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="10 de 13"><figure class="swiper-slide-inner"><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201920%201920'%3E%3C/svg%3E" alt="chatgpt-image-14-de-jan.-de-2026-15_19_43-XpOR5qnVhGyqD3C6" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-14-de-jan.-de-2026-15_19_43-XpOR5qnVhGyqD3C6.webp" /><noscript><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-14-de-jan.-de-2026-15_19_43-XpOR5qnVhGyqD3C6.webp" alt="chatgpt-image-14-de-jan.-de-2026-15_19_43-XpOR5qnVhGyqD3C6" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="11 de 13"><figure class="swiper-slide-inner"><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201920%201920'%3E%3C/svg%3E" alt="chatgpt-image-19-de-jan.-de-2026-15_12_38-6L7NPmuQAHIJACVL" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-19-de-jan.-de-2026-15_12_38-6L7NPmuQAHIJACVL.webp" /><noscript><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-19-de-jan.-de-2026-15_12_38-6L7NPmuQAHIJACVL.webp" alt="chatgpt-image-19-de-jan.-de-2026-15_12_38-6L7NPmuQAHIJACVL" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="12 de 13"><figure class="swiper-slide-inner"><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201920%201920'%3E%3C/svg%3E" alt="chatgpt-image-19-de-jan.-de-2026-15_14_53-lP0uAOC9kFClXqus" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-19-de-jan.-de-2026-15_14_53-lP0uAOC9kFClXqus.webp" /><noscript><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-19-de-jan.-de-2026-15_14_53-lP0uAOC9kFClXqus.webp" alt="chatgpt-image-19-de-jan.-de-2026-15_14_53-lP0uAOC9kFClXqus" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="13 de 13"><figure class="swiper-slide-inner"><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201920%201920'%3E%3C/svg%3E" alt="chatgpt-image-19-de-jan.-de-2026-16_28_04-5fZs304E3nW4ecGa" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-19-de-jan.-de-2026-16_28_04-5fZs304E3nW4ecGa.webp" /><noscript><img width="1920" height="1920" decoding="async" class="swiper-slide-image" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/chatgpt-image-19-de-jan.-de-2026-16_28_04-5fZs304E3nW4ecGa.webp" alt="chatgpt-image-19-de-jan.-de-2026-16_28_04-5fZs304E3nW4ecGa" /></noscript></figure></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<svg aria-hidden="true" class="e-font-icon-svg e-eicon-chevron-left" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M646 125C629 125 613 133 604 142L308 442C296 454 292 471 292 487 292 504 296 521 308 533L604 854C617 867 629 875 646 875 663 875 679 871 692 858 704 846 713 829 713 812 713 796 708 779 692 767L438 487 692 225C700 217 708 204 708 187 708 171 704 154 692 142 675 129 663 125 646 125Z"></path></svg>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<svg aria-hidden="true" class="e-font-icon-svg e-eicon-chevron-right" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M696 533C708 521 713 504 713 487 713 471 708 454 696 446L400 146C388 133 375 125 354 125 338 125 325 129 313 142 300 154 292 171 292 187 292 204 296 221 308 233L563 492 304 771C292 783 288 800 288 817 288 833 296 850 308 863 321 871 338 875 354 875 371 875 388 867 400 854L696 533Z"></path></svg>					</div>
+				
+									<div class="swiper-pagination"></div>
+									</div>
+						</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-63719ed0 e-flex e-con-boxed e-con e-parent" data-id="63719ed0" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div  class="e-con-inner">
+				<div class="elementor-element elementor-element-4ac50625 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="4ac50625" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Eu sei que você precisa trabalhar em casa, <font color="#C25472"><b> mas não tem tempo para aprender algo difícil agora</b></font>  </h2>				</div>
+				<div class="elementor-element elementor-element-2a874045 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="2a874045" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">E toda vez que olha para a sua realidade, <b>você pensa:</b>
+</h2>				</div>
+				<div class="elementor-element elementor-element-5c2c5cde elementor-widget elementor-widget-image" data-id="5c2c5cde" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img fetchpriority="high" decoding="async" width="768" height="619" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20768%20619'%3E%3C/svg%3E" class="attachment-large size-large wp-image-17" alt="" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/ruminaassaues-4-1-EMaWtlQ60irCoTau.avif" /><noscript><img fetchpriority="high" decoding="async" width="768" height="619" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/ruminaassaues-4-1-EMaWtlQ60irCoTau.avif" class="attachment-large size-large wp-image-17" alt="" /></noscript>															</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-70359253 e-flex e-con-boxed e-con e-parent" data-id="70359253" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+					<div  class="e-con-inner">
+				<div class="elementor-element elementor-element-65c57b elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="65c57b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Você sabe do que eu estou falando, não é mesmo?
+</h2>				</div>
+				<div class="elementor-element elementor-element-6d8b8bd elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="6d8b8bd" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Você precisa trabalhar em casa, mas está travada porque tudo parece difícil demais para a sua realidade agora.
+Você não tem muito tempo disponível, mas também não aguenta mais ficar sem dinheiro.</h2>				</div>
+		<div class="elementor-element elementor-element-6e7a8736 e-con-full e-flex e-con e-child" data-id="6e7a8736" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-ec99495 e-con-full e-flex e-con e-child" data-id="ec99495" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-4f000d87 elementor-widget-mobile__width-initial elementor-widget elementor-widget-image" data-id="4f000d87" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img decoding="async" width="800" height="745" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20745'%3E%3C/svg%3E" class="attachment-large size-large wp-image-18" alt="" data-lazy-srcset="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-PROTOCOLO-PAI-DOS-MEUS-FILHOS-10-1024x953.png 1024w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-PROTOCOLO-PAI-DOS-MEUS-FILHOS-10-300x279.png 300w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-PROTOCOLO-PAI-DOS-MEUS-FILHOS-10-768x715.png 768w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-PROTOCOLO-PAI-DOS-MEUS-FILHOS-10.png 1495w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-PROTOCOLO-PAI-DOS-MEUS-FILHOS-10-1024x953.png" /><noscript><img decoding="async" width="800" height="745" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-PROTOCOLO-PAI-DOS-MEUS-FILHOS-10-1024x953.png" class="attachment-large size-large wp-image-18" alt="" srcset="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-PROTOCOLO-PAI-DOS-MEUS-FILHOS-10-1024x953.png 1024w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-PROTOCOLO-PAI-DOS-MEUS-FILHOS-10-300x279.png 300w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-PROTOCOLO-PAI-DOS-MEUS-FILHOS-10-768x715.png 768w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-PROTOCOLO-PAI-DOS-MEUS-FILHOS-10.png 1495w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>															</div>
+				</div>
+		<div class="elementor-element elementor-element-534e87d5 e-con-full e-flex e-con e-child" data-id="534e87d5" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-22b1f0f5 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="22b1f0f5" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Agora eu te pergunto...
+</h2>				</div>
+				<div class="elementor-element elementor-element-4c49bc98 elementor-widget elementor-widget-text-editor" data-id="4c49bc98" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<p>Se existisse um jeito simples de trabalhar em casa vendendo Kits Festas com artes já prontas, que você só precisa imprimir, cortar e vender, mesmo sem experiência e com pouco tempo disponível…</p>								</div>
+				<div class="elementor-element elementor-element-286e77c1 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="286e77c1" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Isso facilitaria a sua vida?
+</h2>				</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-37f56984 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="37f56984" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Se a sua resposta for<font color="#C25472"><b>“SIM”, o Kits Festas Prontos para Vender</b></font>   foi feito para você.</h2>				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-6bca5242 e-flex e-con-boxed e-con e-parent" data-id="6bca5242" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div  class="e-con-inner">
+				<div class="elementor-element elementor-element-16648ac5 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="16648ac5" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Veja tudo o que você vai receber no <font color="#C25472"><b>Kits Festas Prontos para Vender</b></font> 
+</h2>				</div>
+		<div class="elementor-element elementor-element-396b64b5 e-grid e-con-full e-con e-child" data-id="396b64b5" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-69590e2e e-con-full e-flex e-con e-child" data-id="69590e2e" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+		<div class="elementor-element elementor-element-28e77801 e-con-full e-flex e-con e-child" data-id="28e77801" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-3ab20692 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="3ab20692" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Catálogo com mais de 100 Temas de Kits Festas Prontos para Vender
+</h2>				</div>
+				<div class="elementor-element elementor-element-12f8c101 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="12f8c101" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<div class="layout-element layout-element--layout layout-element transition transition--" data-v-b6651962="" data-qa="layout-element-wrapper:zrn6kz"><div id="zrn6KZ" class="text-box layout-element__component layout-element__component--GridTextBox" data-v-b6651962="" data-qa="gridtextbox:zrn6kz"><p class="body" dir="auto">Mais de 500 arquivos disponíveis em Studio e em PDF. Abra em seu celular ou no computador e corte na tesoura ou na Silhouette.</p></div></div>								</div>
+				</div>
+		<div class="elementor-element elementor-element-276f2a30 e-con-full e-flex e-con e-child" data-id="276f2a30" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-1f4b38e4 elementor-widget elementor-widget-image" data-id="1f4b38e4" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img decoding="async" width="800" height="569" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20569'%3E%3C/svg%3E" class="attachment-large size-large wp-image-19" alt="" data-lazy-srcset="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-8.png 944w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-8-300x214.png 300w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-8-768x547.png 768w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-8.png" /><noscript><img loading="lazy" decoding="async" width="800" height="569" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-8.png" class="attachment-large size-large wp-image-19" alt="" srcset="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-8.png 944w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-8-300x214.png 300w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-8-768x547.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-74394723 e-con-full e-flex e-con e-child" data-id="74394723" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+		<div class="elementor-element elementor-element-74abd8c3 e-con-full e-flex e-con e-child" data-id="74abd8c3" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-3258eebc elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="3258eebc" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Fotos Profissionais de Todos os Kits
+</h2>				</div>
+				<div class="elementor-element elementor-element-e0f030c elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="e0f030c" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<div class="layout-element layout-element--layout layout-element transition transition--" data-v-b6651962="" data-qa="layout-element-wrapper:zrn6kz"><div id="zrn6KZ" class="text-box layout-element__component layout-element__component--GridTextBox" data-v-b6651962="" data-qa="gridtextbox:zrn6kz"><section id="zmP1fr" class="block" data-v-653138eb="" data-qa="block"><div class="block-layout block-layout--layout" data-v-653138eb=""><div class="layout-element layout-element--layout layout-element transition transition--" data-v-b6651962="" data-qa="layout-element-wrapper:zpj-xx"><div id="zpj-xx" class="text-box layout-element__component layout-element__component--GridTextBox" data-v-b6651962="" data-qa="gridtextbox:zpj-xx"><p class="body" dir="auto">Mais de 600 Fotos Profissionais dos Kits Festas para você divulgar e já começar a vender.</p></div></div></div></section><section id="zlejwk" class="block" data-v-653138eb="" data-qa="block"></section></div></div>								</div>
+				</div>
+		<div class="elementor-element elementor-element-543625a4 e-con-full e-flex e-con e-child" data-id="543625a4" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-656c7779 elementor-widget elementor-widget-image" data-id="656c7779" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img decoding="async" width="800" height="652" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20652'%3E%3C/svg%3E" class="attachment-large size-large wp-image-20" alt="" data-lazy-srcset="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-11.png 1011w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-11-300x245.png 300w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-11-768x626.png 768w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-11.png" /><noscript><img loading="lazy" decoding="async" width="800" height="652" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-11.png" class="attachment-large size-large wp-image-20" alt="" srcset="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-11.png 1011w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-11-300x245.png 300w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-11-768x626.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-3fd579df e-con-full e-flex e-con e-child" data-id="3fd579df" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+		<div class="elementor-element elementor-element-596398ea e-con-full e-flex e-con e-child" data-id="596398ea" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-135c95f8 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="135c95f8" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Vídeos com Passo a Passo das Montagens
+</h2>				</div>
+				<div class="elementor-element elementor-element-5356ffb9 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="5356ffb9" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<div class="layout-element layout-element--layout layout-element transition transition--" data-v-b6651962="" data-qa="layout-element-wrapper:zrn6kz"><div id="zrn6KZ" class="text-box layout-element__component layout-element__component--GridTextBox" data-v-b6651962="" data-qa="gridtextbox:zrn6kz"><section id="zmP1fr" class="block" data-v-653138eb="" data-qa="block"><div class="block-layout block-layout--layout" data-v-653138eb=""><div class="layout-element layout-element--layout layout-element transition transition--" data-v-b6651962="" data-qa="layout-element-wrapper:zpj-xx"><div id="zpj-xx" class="text-box layout-element__component layout-element__component--GridTextBox" data-v-b6651962="" data-qa="gridtextbox:zpj-xx"><section id="zlejwk" class="block" data-v-653138eb="" data-qa="block"><div class="block-layout block-layout--layout" data-v-653138eb=""><div class="layout-element layout-element--layout layout-element transition transition--" data-v-b6651962="" data-qa="layout-element-wrapper:zi5yfn"><div id="zi5yFN" class="text-box layout-element__component layout-element__component--GridTextBox" data-v-b6651962="" data-qa="gridtextbox:zi5yfn"><p class="body" dir="auto">Um passo a passo prático te ensinando como cortar e montar as peças que compõe os Kits Festas.</p></div></div></div></section><section id="zo7wXZ" class="block" data-v-653138eb="" data-qa="block"></section></div></div></div></section><section id="zlejwk" class="block" data-v-653138eb="" data-qa="block"></section></div></div>								</div>
+				</div>
+		<div class="elementor-element elementor-element-12720b72 e-con-full e-flex e-con e-child" data-id="12720b72" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-4f8db6e9 elementor-widget elementor-widget-image" data-id="4f8db6e9" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img decoding="async" width="800" height="564" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20564'%3E%3C/svg%3E" class="attachment-large size-large wp-image-21" alt="" data-lazy-srcset="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-6.png 953w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-6-300x212.png 300w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-6-768x542.png 768w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-6.png" /><noscript><img loading="lazy" decoding="async" width="800" height="564" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-6.png" class="attachment-large size-large wp-image-21" alt="" srcset="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-6.png 953w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-6-300x212.png 300w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-6-768x542.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-56a54ed e-con-full e-flex e-con e-child" data-id="56a54ed" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+		<div class="elementor-element elementor-element-4a2e7116 e-con-full e-flex e-con e-child" data-id="4a2e7116" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-77e704d3 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="77e704d3" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Manual Express de Impressão
+</h2>				</div>
+				<div class="elementor-element elementor-element-e9c7e69 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="e9c7e69" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<div class="layout-element layout-element--layout layout-element transition transition--" data-v-b6651962="" data-qa="layout-element-wrapper:zrn6kz"><div id="zrn6KZ" class="text-box layout-element__component layout-element__component--GridTextBox" data-v-b6651962="" data-qa="gridtextbox:zrn6kz"><section id="zmP1fr" class="block" data-v-653138eb="" data-qa="block"><div class="block-layout block-layout--layout" data-v-653138eb=""><div class="layout-element layout-element--layout layout-element transition transition--" data-v-b6651962="" data-qa="layout-element-wrapper:zpj-xx"><div id="zpj-xx" class="text-box layout-element__component layout-element__component--GridTextBox" data-v-b6651962="" data-qa="gridtextbox:zpj-xx"><section id="zlejwk" class="block" data-v-653138eb="" data-qa="block"><div class="block-layout block-layout--layout" data-v-653138eb=""><div class="layout-element layout-element--layout layout-element transition transition--" data-v-b6651962="" data-qa="layout-element-wrapper:zi5yfn"><div id="zi5yFN" class="text-box layout-element__component layout-element__component--GridTextBox" data-v-b6651962="" data-qa="gridtextbox:zi5yfn"><div class="layout-element layout-element--layout layout-element transition transition--" data-v-b6651962="" data-qa="layout-element-wrapper:zagbzh"><div id="zAgBzh" class="text-box layout-element__component layout-element__component--GridTextBox" data-v-b6651962="" data-qa="gridtextbox:zagbzh"><p class="body" dir="auto">Imprima as suas peças direto do seu celular ou do computador com qualidade profissional.</p></div></div></div></div></div></section><section id="zo7wXZ" class="block" data-v-653138eb="" data-qa="block"></section></div></div></div></section><section id="zlejwk" class="block" data-v-653138eb="" data-qa="block"></section></div></div>								</div>
+				</div>
+		<div class="elementor-element elementor-element-69bea6bc e-con-full e-flex e-con e-child" data-id="69bea6bc" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-1d1715d5 elementor-widget elementor-widget-image" data-id="1d1715d5" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img decoding="async" width="800" height="569" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20569'%3E%3C/svg%3E" class="attachment-large size-large wp-image-22" alt="" data-lazy-srcset="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-7.png 944w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-7-300x214.png 300w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-7-768x547.png 768w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-7.png" /><noscript><img loading="lazy" decoding="async" width="800" height="569" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-7.png" class="attachment-large size-large wp-image-22" alt="" srcset="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-7.png 944w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-7-300x214.png 300w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-7-768x547.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>															</div>
+				</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-705bb980 elementor-widget elementor-widget-spacer" data-id="705bb980" data-element_type="widget" data-e-type="widget" data-widget_type="spacer.default">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+		<div class="elementor-element elementor-element-3c3bb430 e-con-full e-flex e-con e-child" data-id="3c3bb430" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-7947a531 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="7947a531" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Ainda não acabou!</h2>				</div>
+				<div class="elementor-element elementor-element-71a7f14f elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="71a7f14f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Comprando <font color="#C25472"><b>HOJE</b></font>  você também vai receber esse presente incrível</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-282d47a0 e-con-full e-flex e-con e-child" data-id="282d47a0" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+		<div class="elementor-element elementor-element-1f0ff53c e-con-full e-flex e-con e-child" data-id="1f0ff53c" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-4bae2124 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="4bae2124" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Pack de Topos de Bolo
+</h2>				</div>
+				<div class="elementor-element elementor-element-2b8d012c elementor-widget elementor-widget-text-editor" data-id="2b8d012c" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<div class="layout-element layout-element--layout layout-element transition transition--" data-v-b6651962="" data-qa="layout-element-wrapper:zrn6kz"><div id="zrn6KZ" class="text-box layout-element__component layout-element__component--GridTextBox" data-v-b6651962="" data-qa="gridtextbox:zrn6kz"><section id="zmP1fr" class="block" data-v-653138eb="" data-qa="block"><div class="block-layout block-layout--layout" data-v-653138eb=""><div class="layout-element layout-element--layout layout-element transition transition--" data-v-b6651962="" data-qa="layout-element-wrapper:zpj-xx"><div id="zpj-xx" class="text-box layout-element__component layout-element__component--GridTextBox" data-v-b6651962="" data-qa="gridtextbox:zpj-xx"><section id="zlejwk" class="block" data-v-653138eb="" data-qa="block"><div class="block-layout block-layout--layout" data-v-653138eb=""><div class="layout-element layout-element--layout layout-element transition transition--" data-v-b6651962="" data-qa="layout-element-wrapper:zi5yfn"><div id="zi5yFN" class="text-box layout-element__component layout-element__component--GridTextBox" data-v-b6651962="" data-qa="gridtextbox:zi5yfn"><div class="layout-element layout-element--layout layout-element transition transition--" data-v-b6651962="" data-qa="layout-element-wrapper:zagbzh"><div id="zAgBzh" class="text-box layout-element__component layout-element__component--GridTextBox" data-v-b6651962="" data-qa="gridtextbox:zagbzh"><div class="layout-element layout-element--layout layout-element transition transition--" data-v-b6651962="" data-qa="layout-element-wrapper:zh8pir"><div id="zh8pir" class="text-box layout-element__component layout-element__component--GridTextBox" data-v-b6651962="" data-qa="gridtextbox:zh8pir"><p class="body" dir="auto">Mais de 50 topos de bolos, prontos para você imprimir e montar.</p></div></div></div></div></div></div></div></section><section id="zo7wXZ" class="block" data-v-653138eb="" data-qa="block"></section></div></div></div></section><section id="zlejwk" class="block" data-v-653138eb="" data-qa="block"></section></div></div>								</div>
+				</div>
+		<div class="elementor-element elementor-element-4386c574 e-con-full e-flex e-con e-child" data-id="4386c574" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-f4ac55c elementor-widget elementor-widget-image" data-id="f4ac55c" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img decoding="async" width="800" height="569" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20569'%3E%3C/svg%3E" class="attachment-large size-large wp-image-23" alt="" data-lazy-srcset="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-12.png 944w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-12-300x214.png 300w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-12-768x547.png 768w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-12.png" /><noscript><img loading="lazy" decoding="async" width="800" height="569" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-12.png" class="attachment-large size-large wp-image-23" alt="" srcset="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-12.png 944w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-12-300x214.png 300w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-12-768x547.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>															</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-4a391bf4 e-flex e-con-boxed e-con e-parent" data-id="4a391bf4" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+					<div  class="e-con-inner">
+		<div class="elementor-element elementor-element-53eb2686 e-con-full e-flex e-con e-child" data-id="53eb2686" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-190c091f e-con-full e-flex e-con e-child" data-id="190c091f" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-3efa7c42 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="3efa7c42" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default"><font color="#C25472"><b>Kits Festas Prontos para Vender </b></font> é para você que:
+</h2>				</div>
+				<div class="elementor-element elementor-element-5093d94a elementor-widget-mobile__width-initial elementor-widget__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="5093d94a" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Precisa trabalhar em casa, mas não tem tempo para aprender algo difícil.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Não sabe criar artes e quer tudo pronto para imprimir, cortar e montar.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Vive uma rotina corrida com casa e filhos e precisa de algo simples e possível.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Quer trabalhar no seu ritmo, sem depender de ninguém e sem sair de casa.</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-3b3f7e95 e-con-full e-flex e-con e-child" data-id="3b3f7e95" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-4231963a elementor-widget elementor-widget-image" data-id="4231963a" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img decoding="async" width="800" height="629" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20629'%3E%3C/svg%3E" class="attachment-large size-large wp-image-24" alt="" data-lazy-srcset="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-18-1024x805.png 1024w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-18-300x236.png 300w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-18-768x604.png 768w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-18.png 1359w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-18-1024x805.png" /><noscript><img loading="lazy" decoding="async" width="800" height="629" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-18-1024x805.png" class="attachment-large size-large wp-image-24" alt="" srcset="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-18-1024x805.png 1024w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-18-300x236.png 300w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-18-768x604.png 768w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-18.png 1359w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>															</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-6e24870 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="6e24870" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Se você se identificou com pelo menos 2 dessas situações, <font color="#C25472"><b>Kits Festas Prontos Para Vender</b></font> é para você.
+</h2>				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-6ff0e38a e-flex e-con-boxed e-con e-parent" data-id="6ff0e38a" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div  class="e-con-inner">
+				<div class="elementor-element elementor-element-701294d0 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="701294d0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Recaptulando...</h2>				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-16bd3530 e-flex e-con-boxed e-con e-parent" data-id="16bd3530" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div  class="e-con-inner">
+				<div class="elementor-element elementor-element-7daf112c elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="7daf112c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Recapitulando tudo que você vai receber no <font color="#C25472"><b>Kits Festas Prontos Para Vender</b></font> </h2>				</div>
+		<div class="elementor-element elementor-element-1215edc0 e-con-full e-flex e-con e-child" data-id="1215edc0" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+		<div class="elementor-element elementor-element-23df28e2 e-con-full e-flex e-con e-child" data-id="23df28e2" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-5a55ca2d elementor-widget-mobile__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="5a55ca2d" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Catálogo com mais de 100 Temas de Kits Festas Prontos para Vender</span>
+									</li>
+						</ul>
+						</div>
+				<div class="elementor-element elementor-element-5f067682 elementor-headline--style-highlight elementor-widget elementor-widget-animated-headline" data-id="5f067682" data-element_type="widget" data-e-type="widget" data-settings="{&quot;marker&quot;:&quot;strikethrough&quot;,&quot;highlighted_text&quot;:&quot;R$97,00&quot;,&quot;headline_style&quot;:&quot;highlight&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;highlight_animation_duration&quot;:1200,&quot;highlight_iteration_delay&quot;:8000}" data-widget_type="animated-headline.default">
+							<h3 class="elementor-headline">
+				<span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
+					<span class="elementor-headline-dynamic-text elementor-headline-text-active">R$97,00</span>
+				</span>
+				</h3>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-7b96fc92 e-con-full e-flex e-con e-child" data-id="7b96fc92" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-3a6a57bf elementor-widget-mobile__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="3a6a57bf" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Fotos Profissionais de Todos os Kits</span>
+									</li>
+						</ul>
+						</div>
+				<div class="elementor-element elementor-element-5b8648f5 elementor-headline--style-highlight elementor-widget elementor-widget-animated-headline" data-id="5b8648f5" data-element_type="widget" data-e-type="widget" data-settings="{&quot;marker&quot;:&quot;strikethrough&quot;,&quot;highlighted_text&quot;:&quot;R$197,00&quot;,&quot;headline_style&quot;:&quot;highlight&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;highlight_animation_duration&quot;:1200,&quot;highlight_iteration_delay&quot;:8000}" data-widget_type="animated-headline.default">
+							<h3 class="elementor-headline">
+				<span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
+					<span class="elementor-headline-dynamic-text elementor-headline-text-active">R$197,00</span>
+				</span>
+				</h3>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-5aaa2b1b e-con-full e-flex e-con e-child" data-id="5aaa2b1b" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-666d0df7 elementor-widget-mobile__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="666d0df7" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Vídeos com Passo a Passo das Montagens</span>
+									</li>
+						</ul>
+						</div>
+				<div class="elementor-element elementor-element-5e31f6f3 elementor-headline--style-highlight elementor-widget elementor-widget-animated-headline" data-id="5e31f6f3" data-element_type="widget" data-e-type="widget" data-settings="{&quot;marker&quot;:&quot;strikethrough&quot;,&quot;highlighted_text&quot;:&quot;R$97,00&quot;,&quot;headline_style&quot;:&quot;highlight&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;highlight_animation_duration&quot;:1200,&quot;highlight_iteration_delay&quot;:8000}" data-widget_type="animated-headline.default">
+							<h3 class="elementor-headline">
+				<span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
+					<span class="elementor-headline-dynamic-text elementor-headline-text-active">R$97,00</span>
+				</span>
+				</h3>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-3998c838 e-con-full e-flex e-con e-child" data-id="3998c838" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-429fbfaf elementor-widget-mobile__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="429fbfaf" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Manual Express de Impressão</span>
+									</li>
+						</ul>
+						</div>
+				<div class="elementor-element elementor-element-596cf859 elementor-headline--style-highlight elementor-widget elementor-widget-animated-headline" data-id="596cf859" data-element_type="widget" data-e-type="widget" data-settings="{&quot;marker&quot;:&quot;strikethrough&quot;,&quot;highlighted_text&quot;:&quot;R$97,00&quot;,&quot;headline_style&quot;:&quot;highlight&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;highlight_animation_duration&quot;:1200,&quot;highlight_iteration_delay&quot;:8000}" data-widget_type="animated-headline.default">
+							<h3 class="elementor-headline">
+				<span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
+					<span class="elementor-headline-dynamic-text elementor-headline-text-active">R$97,00</span>
+				</span>
+				</h3>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-3112e95c e-con-full e-flex e-con e-child" data-id="3112e95c" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-1de6134f elementor-widget-mobile__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="1de6134f" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Pack de Topos de Bolo</span>
+									</li>
+						</ul>
+						</div>
+				<div class="elementor-element elementor-element-12fb5d2b elementor-headline--style-highlight elementor-widget elementor-widget-animated-headline" data-id="12fb5d2b" data-element_type="widget" data-e-type="widget" data-settings="{&quot;marker&quot;:&quot;strikethrough&quot;,&quot;highlighted_text&quot;:&quot;R$97,00&quot;,&quot;headline_style&quot;:&quot;highlight&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;highlight_animation_duration&quot;:1200,&quot;highlight_iteration_delay&quot;:8000}" data-widget_type="animated-headline.default">
+							<h3 class="elementor-headline">
+				<span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
+					<span class="elementor-headline-dynamic-text elementor-headline-text-active">R$97,00</span>
+				</span>
+				</h3>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-66bf7f59 e-con-full e-flex e-con e-child" data-id="66bf7f59" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-7563c43c elementor-widget-mobile__width-initial elementor-headline--style-highlight elementor-widget elementor-widget-animated-headline" data-id="7563c43c" data-element_type="widget" data-e-type="widget" data-settings="{&quot;marker&quot;:&quot;strikethrough&quot;,&quot;highlighted_text&quot;:&quot;R$779,00&quot;,&quot;headline_style&quot;:&quot;highlight&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;highlight_animation_duration&quot;:1200,&quot;highlight_iteration_delay&quot;:8000}" data-widget_type="animated-headline.default">
+							<h3 class="elementor-headline">
+					<span class="elementor-headline-plain-text elementor-headline-text-wrapper">Tudo isso deveria custar:</span>
+				<span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
+					<span class="elementor-headline-dynamic-text elementor-headline-text-active">R$779,00</span>
+				</span>
+				</h3>
+						</div>
+				<div class="elementor-element elementor-element-3d7506db elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="3d7506db" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Mas você não vai pagar nem um décimo disso, <b>garantindo tudo por apenas:</b></h2>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-50c1d74a e-flex e-con-boxed e-con e-parent" data-id="50c1d74a" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+					<div  class="e-con-inner">
+		<div class="elementor-element elementor-element-3ab5e510 e-con-full e-flex e-con e-child" data-id="3ab5e510" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-5685ce92 e-con-full e-flex e-con e-child" data-id="5685ce92" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-687ef60e elementor-widget elementor-widget-image" data-id="687ef60e" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img decoding="async" width="800" height="719" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20719'%3E%3C/svg%3E" class="attachment-large size-large wp-image-25" alt="" data-lazy-srcset="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-17-1024x920.png 1024w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-17-300x270.png 300w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-17-768x690.png 768w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-17.png 1348w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-17-1024x920.png" /><noscript><img loading="lazy" decoding="async" width="800" height="719" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-17-1024x920.png" class="attachment-large size-large wp-image-25" alt="" srcset="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-17-1024x920.png 1024w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-17-300x270.png 300w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-17-768x690.png 768w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-17.png 1348w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>															</div>
+				</div>
+				<div class="elementor-element elementor-element-284fb3ad elementor-widget elementor-widget-html" data-id="284fb3ad" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<div class="ar-ribbon-left-box">
+    <div class="ar-elementor-ribbon-rotate">ACESSO VITALÍCIO</div>
+</div>				</div>
+		<div class="elementor-element elementor-element-68ee8a7c e-con-full e-flex e-con e-child" data-id="68ee8a7c" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+				<div class="elementor-element elementor-element-7ed9e6 elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="7ed9e6" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img decoding="async" width="375" height="103" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-1.avif" class="attachment-large size-large wp-image-15" alt="" />															</div>
+		<div class="elementor-element elementor-element-48c63d89 e-con-full e-flex e-con e-child" data-id="48c63d89" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-54bed1df elementor-widget elementor-widget-heading" data-id="54bed1df" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Por apenas 9x de:</h2>				</div>
+				<div class="elementor-element elementor-element-55573d8d elementor-widget elementor-widget-heading" data-id="55573d8d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default"><span class="texto">R$</span>9<span class="texto">,21</span></h2>				</div>
+				<div class="elementor-element elementor-element-a49cea8 elementor-widget elementor-widget-heading" data-id="a49cea8" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">ou R$67,00 à vista
+
+</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-53a85616 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="53a85616" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Você paga esse valor uma única vez e tem acesso para sempre.
+
+
+</h2>				</div>
+				<div class="elementor-element elementor-element-25b04b4f elementor-align-center elementor-widget elementor-widget-button" data-id="25b04b4f" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+										<a class="elementor-button elementor-button-link elementor-size-sm" href="https://pay.hotmart.com/N103884227V?off=kz57my30&#038;checkoutMode=10">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">QUERO COMPRAR AGORA</span>
+					</span>
+					</a>
+								</div>
+				<div class="elementor-element elementor-element-3eec114 elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="3eec114" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img decoding="async" width="1024" height="147" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20147'%3E%3C/svg%3E" class="attachment-full size-full wp-image-26" alt="" data-lazy-srcset="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-31.png 1024w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-31-300x43.png 300w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-31-768x110.png 768w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-31.png" /><noscript><img loading="lazy" decoding="async" width="1024" height="147" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-31.png" class="attachment-full size-full wp-image-26" alt="" srcset="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-31.png 1024w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-31-300x43.png 300w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-31-768x110.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript>															</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-4a545ec7 e-flex e-con-boxed e-con e-parent" data-id="4a545ec7" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div  class="e-con-inner">
+				<div class="elementor-element elementor-element-1995f252 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="1995f252" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Compre agora e receba seu acesso no e-mail imediatamente!</h2>				</div>
+		<div class="elementor-element elementor-element-736ce6e5 e-grid e-con-full e-con e-child" data-id="736ce6e5" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-75c4cdf0 e-con-full e-flex e-con e-child" data-id="75c4cdf0" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+				<div class="elementor-element elementor-element-7d6c5037 elementor-view-default elementor-position-block-start elementor-mobile-position-block-start elementor-widget elementor-widget-icon-box" data-id="7d6c5037" data-element_type="widget" data-e-type="widget" data-widget_type="icon-box.default">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-far-envelope" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							FAÇA SUA COMPRA						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Assim que finalizar sua compra, você vai receber seu acesso no email.
+
+					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-771ba27c e-con-full e-flex e-con e-child" data-id="771ba27c" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+				<div class="elementor-element elementor-element-5a8005c0 elementor-view-default elementor-position-block-start elementor-mobile-position-block-start elementor-widget elementor-widget-icon-box" data-id="5a8005c0" data-element_type="widget" data-e-type="widget" data-widget_type="icon-box.default">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-cloud-download-alt" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M537.6 226.6c4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4zm-132.9 88.7L299.3 420.7c-6.2 6.2-16.4 6.2-22.6 0L171.3 315.3c-10.1-10.1-2.9-27.3 11.3-27.3H248V176c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16v112h65.4c14.2 0 21.4 17.2 11.3 27.3z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							BAIXE TODO O MATERIAL						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Você vai receber todos os entregáveis imediatamente para usar quando quiser.
+
+					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-66d9ed3f e-con-full e-flex e-con e-child" data-id="66d9ed3f" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+				<div class="elementor-element elementor-element-52f1f1a9 elementor-view-default elementor-position-block-start elementor-mobile-position-block-start elementor-widget elementor-widget-icon-box" data-id="52f1f1a9" data-element_type="widget" data-e-type="widget" data-widget_type="icon-box.default">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-far-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							TUDO PRONTO!						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Agora é só acessar e começar a trabalhar em casa com os Kits Festas Prontos para Vender.
+
+					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-4c4f730 e-flex e-con-boxed e-con e-parent" data-id="4c4f730" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+					<div  class="e-con-inner">
+		<div class="elementor-element elementor-element-3b44bdce e-con-full e-flex e-con e-child" data-id="3b44bdce" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-a672928 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="a672928" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Karla Vieira e Alice Ponciano são as criadoras do <font color="#C25472"><b>Kits Festas Prontos Para Vender</b></font> </h2>				</div>
+				<div class="elementor-element elementor-element-13aa1031 elementor-widget elementor-widget-text-editor" data-id="13aa1031" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<p class="body" dir="auto">Ao longo dos anos, já ajudamos milhares de mulheres a iniciarem o trabalho com papelaria personalizada, mesmo sem experiência, sem equipamentos caros e sem saber criar artes.</p><p class="body" dir="auto"> </p><p class="body" dir="auto">Somamos mais de 9 mil alunas e construímos uma comunidade com mais de 800 mil seguidores, mostrando na prática que esse é um dos mercados mais lucrativos e acessíveis do Brasil.</p><p class="body" dir="auto"> </p><p class="body" dir="auto"><strong>Nosso objetivo é ajudar você a começar a trabalhar em casa com Kits Festas prontos, usando apenas papel e tesoura, sem precisar criar artes ou aprender algo do zero.</strong></p>								</div>
+				</div>
+		<div class="elementor-element elementor-element-4452a378 e-con-full e-flex e-con e-child" data-id="4452a378" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-5454eca8 elementor-widget elementor-widget-image" data-id="5454eca8" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img decoding="async" width="800" height="871" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20871'%3E%3C/svg%3E" class="attachment-large size-large wp-image-27" alt="" data-lazy-srcset="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-16-941x1024.png 941w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-16-276x300.png 276w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-16-768x836.png 768w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-16.png 1301w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-16-941x1024.png" /><noscript><img loading="lazy" decoding="async" width="800" height="871" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-16-941x1024.png" class="attachment-large size-large wp-image-27" alt="" srcset="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-16-941x1024.png 941w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-16-276x300.png 276w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-16-768x836.png 768w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-16.png 1301w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>															</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-1b19c9e7 e-flex e-con-boxed e-con e-parent" data-id="1b19c9e7" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div  class="e-con-inner">
+				<div class="elementor-element elementor-element-21d6374a elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="21d6374a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Agora você tem duas opções:
+
+</h2>				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-363a36e4 e-flex e-con-boxed e-con e-parent" data-id="363a36e4" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div  class="e-con-inner">
+		<div class="elementor-element elementor-element-62aef245 e-grid e-con-full e-con e-child" data-id="62aef245" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-6ee9ebd e-con-full e-flex e-con e-child" data-id="6ee9ebd" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-60d1c6b3 e-con-full e-flex e-con e-child" data-id="60d1c6b3" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-25d7cebf e-con-full e-flex e-con e-child" data-id="25d7cebf" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-5b81cba e-con-full e-flex e-con e-child" data-id="5b81cba" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-453fed5a elementor-widget elementor-widget-heading" data-id="453fed5a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Opcão 1</h2>				</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-5d5604f7 e-con-full e-flex e-con e-child" data-id="5d5604f7" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-55fb485e e-con-full e-flex e-con e-child" data-id="55fb485e" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-37298f0d elementor-widget elementor-widget-heading" data-id="37298f0d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default"><b>Cotinuar querendo trabalhar em casa, </b>mas sempre travando porque acha que precisa aprender coisas difíceis, criar artes do zero, investir em equipamentos e entender tudo sozinha antes de começar.</h2>				</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-2ed4ff15 e-con-full e-flex e-con e-child" data-id="2ed4ff15" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-5a733c5 e-con-full e-flex e-con e-child" data-id="5a733c5" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-32fd1f47 e-con-full e-flex e-con e-child" data-id="32fd1f47" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-337c9597 e-con-full e-flex e-con e-child" data-id="337c9597" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-42399b35 elementor-widget elementor-widget-heading" data-id="42399b35" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Opcão 2</h2>				</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-1c99ba0a e-con-full e-flex e-con e-child" data-id="1c99ba0a" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-3825b77 e-con-full e-flex e-con e-child" data-id="3825b77" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-5af5c4fe elementor-widget elementor-widget-heading" data-id="5af5c4fe" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default"><b>Acessar o Kits Festas Prontos Para Vender e começar com artes prontas,</b> modelos organizados e materiais já preparados para você vender papelaria personalizada em casa, mesmo sem experiência.</h2>				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-708babd7 elementor-widget__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-heading" data-id="708babd7" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default"><b>Eu sei, e você também sabe: </b>a opção 2 é a mais inteligente. Então clique no botão abaixo e acesse agora mesmo o <font color="#C25472"><b>Kits Festas Prontos Para Vender</b></font></h2>				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-300cdf71 e-flex e-con-boxed e-con e-parent" data-id="300cdf71" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+					<div  class="e-con-inner">
+		<div class="elementor-element elementor-element-44732f28 e-con-full e-flex e-con e-child" data-id="44732f28" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-4b590b3a e-con-full e-flex e-con e-child" data-id="4b590b3a" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-5b9a74bb elementor-widget elementor-widget-image" data-id="5b9a74bb" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img decoding="async" width="800" height="719" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20719'%3E%3C/svg%3E" class="attachment-large size-large wp-image-25" alt="" data-lazy-srcset="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-17-1024x920.png 1024w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-17-300x270.png 300w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-17-768x690.png 768w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-17.png 1348w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-17-1024x920.png" /><noscript><img loading="lazy" decoding="async" width="800" height="719" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-17-1024x920.png" class="attachment-large size-large wp-image-25" alt="" srcset="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-17-1024x920.png 1024w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-17-300x270.png 300w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-17-768x690.png 768w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-17.png 1348w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>															</div>
+				</div>
+				<div class="elementor-element elementor-element-646793ec elementor-widget elementor-widget-html" data-id="646793ec" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					<div class="ar-ribbon-left-box">
+    <div class="ar-elementor-ribbon-rotate">ACESSO VITALÍCIO</div>
+</div>				</div>
+		<div class="elementor-element elementor-element-59659d83 e-con-full e-flex e-con e-child" data-id="59659d83" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+				<div class="elementor-element elementor-element-41bba2a4 elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="41bba2a4" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img decoding="async" width="375" height="103" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-FESTAS-1.avif" class="attachment-large size-large wp-image-15" alt="" />															</div>
+		<div class="elementor-element elementor-element-2e689a60 e-con-full e-flex e-con e-child" data-id="2e689a60" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-7599c600 elementor-widget elementor-widget-heading" data-id="7599c600" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Por apenas 9x de:</h2>				</div>
+				<div class="elementor-element elementor-element-6dfe8e75 elementor-widget elementor-widget-heading" data-id="6dfe8e75" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default"><span class="texto">R$</span>9<span class="texto">,21</span></h2>				</div>
+				<div class="elementor-element elementor-element-35673122 elementor-widget elementor-widget-heading" data-id="35673122" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">ou R$67,00 à vista
+
+</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-62eda39b elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="62eda39b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Você paga esse valor uma única vez e tem acesso para sempre.
+
+
+</h2>				</div>
+				<div class="elementor-element elementor-element-11cf6922 elementor-align-center elementor-widget elementor-widget-button" data-id="11cf6922" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+										<a class="elementor-button elementor-button-link elementor-size-sm" href="https://pay.hotmart.com/N103884227V?off=kz57my30&#038;checkoutMode=10">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">QUERO COMPRAR AGORA</span>
+					</span>
+					</a>
+								</div>
+				<div class="elementor-element elementor-element-3d2ce6ba elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="3d2ce6ba" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img decoding="async" width="1024" height="147" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20147'%3E%3C/svg%3E" class="attachment-full size-full wp-image-26" alt="" data-lazy-srcset="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-31.png 1024w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-31-300x43.png 300w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-31-768x110.png 768w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-31.png" /><noscript><img loading="lazy" decoding="async" width="1024" height="147" src="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-31.png" class="attachment-full size-full wp-image-26" alt="" srcset="https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-31.png 1024w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-31-300x43.png 300w,   https://vendakitsfestas.com.br/wp-content/uploads/2026/05/IMG-KIT-31-768x110.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript>															</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-245a5956 e-flex e-con-boxed e-con e-parent" data-id="245a5956" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div  class="e-con-inner">
+				<div class="elementor-element elementor-element-14de6709 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="14de6709" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Perguntas Frequentes</h2>				</div>
+				<div class="elementor-element elementor-element-a18c0c7 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-n-accordion" data-id="a18c0c7" data-element_type="widget" data-e-type="widget" data-settings="{&quot;default_state&quot;:&quot;all_collapsed&quot;,&quot;max_items_expended&quot;:&quot;one&quot;,&quot;n_accordion_animation_duration&quot;:{&quot;unit&quot;:&quot;ms&quot;,&quot;size&quot;:400,&quot;sizes&quot;:[]}}" data-widget_type="nested-accordion.default">
+							<div class="e-n-accordion" aria-label="Accordion. Open links with Enter or Space, close with Escape, and navigate with Arrow Keys">
+						<details id="e-n-accordion-item-1690" class="e-n-accordion-item" >
+				<summary class="e-n-accordion-item-title" data-accordion-index="1" tabindex="0" aria-expanded="false" aria-controls="e-n-accordion-item-1690" >
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> Qual é a forma de pagamento? </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened' ><svg aria-hidden="true" class="e-font-icon-svg e-fas-minus-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6 0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-plus-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-1690" class="elementor-element elementor-element-75cfad08 e-con-full e-flex e-con e-child" data-id="75cfad08" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-70110ce1 elementor-widget elementor-widget-text-editor" data-id="70110ce1" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<p class="body" dir="auto">Você pode fazer o pagamento pelo pix ou cartão de crédito.</p>								</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-1691" class="e-n-accordion-item" >
+				<summary class="e-n-accordion-item-title" data-accordion-index="2" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-1691" >
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> O pagamento é seguro? </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened' ><svg aria-hidden="true" class="e-font-icon-svg e-fas-minus-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6 0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-plus-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-1691" class="elementor-element elementor-element-a76e318 e-con-full e-flex e-con e-child" data-id="a76e318" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-446e5253 elementor-widget elementor-widget-text-editor" data-id="446e5253" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<p class="body" dir="auto">Sim, o pagamento é 100% seguro, onde utilizamos uma das maiores plataformas de vendas do mundo, a Hotmart.</p>								</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-1692" class="e-n-accordion-item" >
+				<summary class="e-n-accordion-item-title" data-accordion-index="3" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-1692" >
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> Funciona em celular e em computador? </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened' ><svg aria-hidden="true" class="e-font-icon-svg e-fas-minus-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6 0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-plus-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-1692" class="elementor-element elementor-element-52e25027 e-con-full e-flex e-con e-child" data-id="52e25027" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-17d85cb4 elementor-widget elementor-widget-text-editor" data-id="17d85cb4" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<p class="body" dir="auto">Todos os arquivos funcionam tanto em celular, quanto em computador.</p>								</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-1693" class="e-n-accordion-item" >
+				<summary class="e-n-accordion-item-title" data-accordion-index="4" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-1693" >
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> Como vou acessar o Kits Festas Prontos Para Vender? </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened' ><svg aria-hidden="true" class="e-font-icon-svg e-fas-minus-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6 0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-plus-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-1693" class="elementor-element elementor-element-2af5e149 e-con-full e-flex e-con e-child" data-id="2af5e149" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-1d8559b1 elementor-widget elementor-widget-text-editor" data-id="1d8559b1" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<section id="z0FacL" class="block" data-v-653138eb="" data-qa="block"><div class="block-layout block-layout--layout" data-v-653138eb=""><div class="layout-element layout-element--layout layout-element transition transition--" data-v-b6651962="" data-qa="layout-element-wrapper:zkk7-j"><div id="zkK7-J" class="text-box layout-element__component layout-element__component--GridTextBox" data-v-b6651962="" data-qa="gridtextbox:zkk7-j"><p class="body" dir="auto">Assim que o seu pagamento for concluído, enviaremos um email com todos os dados de login para você acessar o produto junto com todos os bônus.</p></div></div></div></section><section id="zbwi1n" class="block" data-v-653138eb="" data-qa="block"></section>								</div>
+				</div>
+					</details>
+					</div>
+						</div>
+				<div class="elementor-element elementor-element-45399610 elementor-align-center elementor-widget elementor-widget-button" data-id="45399610" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+										<a class="elementor-button elementor-button-link elementor-size-sm" href="https://pay.hotmart.com/N103884227V?off=kz57my30&#038;checkoutMode=10">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">QUERO COMPRAR AGORA</span>
+					</span>
+					</a>
+								</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-5ec751e7 e-flex e-con-boxed e-con e-parent" data-id="5ec751e7" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div  class="e-con-inner">
+				<div class="elementor-element elementor-element-5022dadb elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="5022dadb" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Esse produto pertence a empresa Quero Fazer Festas.
+
+
+</h2>				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-42f4bae8 e-flex e-con-boxed e-con e-parent" data-id="42f4bae8" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div  class="e-con-inner">
+		<div class="elementor-element elementor-element-21701b64 e-con-full e-flex e-con e-child" data-id="21701b64" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-723e3a28 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="723e3a28" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<p>Copyright © 2026<br />Todos os Direitos Reservados.<br />CNPJ: 17.017.741/0001-88<br />Contagem &#8211; MG</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-1951829d elementor-widget elementor-widget-text-editor" data-id="1951829d" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook.
+Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. A compra desse material não garante nenhum tipo de resultado. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais de alunos.								</div>
+				<div class="elementor-element elementor-element-331452d5 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="331452d5" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<p class="body" dir="auto">Ficou com alguma dúvida?</p><p class="body" dir="auto">Entre em contato pelo e-mail:</p><p class="body" dir="auto"><a href="mailto:cursos@querofazerfestas.com.br">cursos@querofazerfestas.com.br</a></p>								</div>
+					</div>
+				</div>
+				</div>
+		<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/hello-elementor/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+			<script type="text/rocketlazyloadscript">
+				( () => {
+					const lazyloadRunObserver = () => {
+						const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+						const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+							entries.forEach( ( entry ) => {
+								if ( entry.isIntersecting ) {
+									let lazyloadBackground = entry.target;
+									if( lazyloadBackground ) {
+										lazyloadBackground.classList.add( 'e-lazyloaded' );
+									}
+									lazyloadBackgroundObserver.unobserve( entry.target );
+								}
+							});
+						}, { rootMargin: '200px 0px 200px 0px' } );
+						lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+							lazyloadBackgroundObserver.observe( lazyloadBackground );
+						} );
+					};
+					const events = [
+						'DOMContentLoaded',
+						'elementor/lazyload/observe',
+					];
+					events.forEach( ( event ) => {
+						document.addEventListener( event, lazyloadRunObserver );
+					} );
+				} )();
+			</script>
+			<script id="hostinger-reach-subscription-block-view-js-extra">
+var hostinger_reach_subscription_block_data = {"endpoint":"https://vendakitsfestas.com.br/wp-json/hostinger-reach/v1/contact","nonce":"4073381af9","translations":{"thanks":"Obrigado por ser um assinante!","error":"Ocorreu um erro. Tente novamente."}};
+//# sourceURL=hostinger-reach-subscription-block-view-js-extra
+</script>
+<script data-minify="1" id="hostinger-reach-subscription-block-view-js" src="https://vendakitsfestas.com.br/wp-content/cache/min/1/wp-content/plugins/hostinger-reach/frontend/dist/blocks/subscription-view.js?ver=1787605236" data-rocket-defer defer></script>
+<script id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+//# sourceURL=rocket-browser-checker-js-after
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://vendakitsfestas.com.br","onHoverDelay":"100","rateThrottle":"3"};
+//# sourceURL=rocket-preload-links-js-extra
+</script>
+<script id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+
+//# sourceURL=rocket-preload-links-js-after
+</script>
+<script id="rocket_lazyload_css-js-extra">
+var rocket_lazyload_css_data = {"threshold":"300"};
+//# sourceURL=rocket_lazyload_css-js-extra
+</script>
+<script id="rocket_lazyload_css-js-after">
+!function o(n,c,a){function u(t,e){if(!c[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(s)return s(t,!0);throw(e=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",e}r=c[t]={exports:{}},n[t][0].call(r.exports,function(e){return u(n[t][1][e]||e)},r,r.exports,o,n,c,a)}return c[t].exports}for(var s="function"==typeof require&&require,e=0;e<a.length;e++)u(a[e]);return u}({1:[function(e,t,r){"use strict";{const c="undefined"==typeof rocket_pairs?[]:rocket_pairs,a=(("undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs).map(t=>{var e=t.selector;document.querySelectorAll(e).forEach(e=>{e.setAttribute("data-rocket-lazy-bg-"+t.hash,"excluded")})}),document.querySelector("#wpr-lazyload-bg-container"));var o=rocket_lazyload_css_data.threshold||300;const u=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&c.filter(e=>t.target.matches(e.selector)).map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,a.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{u.unobserve(e),e.setAttribute("data-rocket-lazy-bg-"+t.hash,"loaded")}))})})},{rootMargin:o+"px"});function n(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&c.forEach(t=>{try{document.querySelectorAll(t.selector).forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&(u.observe(e),(t.elements||=[]).push(e))})}catch(e){console.error(e)}})}n(),function(){const r=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType)return(t=new r(t)).observe(e,{attributes:!0,childList:!0,subtree:!0}),t}}()(document.querySelector("body"),n)}},{}]},{},[1]);
+//# sourceURL=rocket_lazyload_css-js-after
+</script>
+<script data-minify="1" id="hello-theme-frontend-js" src="https://vendakitsfestas.com.br/wp-content/cache/min/1/wp-content/themes/hello-elementor/assets/js/hello-frontend.js?ver=1787605236" data-rocket-defer defer></script>
+<script id="elementor-webpack-runtime-js" src="https://vendakitsfestas.com.br/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.2.2" data-rocket-defer defer></script>
+<script id="elementor-frontend-modules-js" src="https://vendakitsfestas.com.br/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.2.2" data-rocket-defer defer></script>
+<script id="jquery-ui-core-js" src="https://vendakitsfestas.com.br/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" data-rocket-defer defer></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnX":"Compartilhar no X","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar","a11yCarouselPrevSlideMessage":"Slide anterior","a11yCarouselNextSlideMessage":"Pr\u00f3ximo slide","a11yCarouselFirstSlideMessage":"Este \u00e9 o primeiro slide","a11yCarouselLastSlideMessage":"Este \u00e9 o \u00faltimo slide","a11yCarouselPaginationBulletMessage":"Ir para o slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Dispositivos m\u00f3veis no modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Dispositivos m\u00f3veis no modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet no modo retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet no modo paisagem","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Notebook","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Tela ampla (widescreen)","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.2.2","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"e_panel_promotions":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"e_pro_free_trial_popup":true,"nested-elements":true,"e_atomic_elements":true,"atomic_widgets_should_enforce_capabilities":true,"editor_mcp":true,"e_bc_migrations":true,"e_classes":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_variables_manager":true,"e_opt_in_v4_page":true,"e_opt_in_v4":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true,"e_pro_atomic_form":true,"mega-menu":true,"e_pro_variables":true,"e_pro_interactions":true},"urls":{"assets":"https:\/\/vendakitsfestas.com.br\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/vendakitsfestas.com.br\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/vendakitsfestas.com.br\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"e9c892ca0f","atomicFormsSendForm":"987e0c470e"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"title","hello_footer_logo_type":"logo"},"post":{"id":12,"title":"Kits%20Festas%20Prontos%20Para%20Vender%20%E2%80%93%20Karla%20Vieira%20e%20Alice%20Ponciano","excerpt":"","featuredImage":false}};
+//# sourceURL=elementor-frontend-js-before
+</script>
+<script id="elementor-frontend-js" src="https://vendakitsfestas.com.br/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.2.2" data-rocket-defer defer></script>
+<script id="swiper-js" src="https://vendakitsfestas.com.br/wp-content/plugins/elementor/assets/lib/swiper/v8/swiper.min.js?ver=8.4.5" data-rocket-defer defer></script>
+<script id="elementor-pro-webpack-runtime-js" src="https://vendakitsfestas.com.br/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=4.0.4" data-rocket-defer defer></script>
+<script id="wp-hooks-js" src="https://vendakitsfestas.com.br/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d"></script>
+<script id="wp-i18n-js" src="https://vendakitsfestas.com.br/wp-includes/js/dist/i18n.min.js?ver=781d11515ad3d91786ec"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/vendakitsfestas.com.br\/wp-admin\/admin-ajax.php","nonce":"eccca98ee4","urls":{"assets":"https:\/\/vendakitsfestas.com.br\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/vendakitsfestas.com.br\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/vendakitsfestas.com.br\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+//# sourceURL=elementor-pro-frontend-js-before
+</script>
+<script id="elementor-pro-frontend-js" src="https://vendakitsfestas.com.br/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=4.0.4" data-rocket-defer defer></script>
+<script id="pro-elements-handlers-js" src="https://vendakitsfestas.com.br/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=4.0.4" data-rocket-defer defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://vendakitsfestas.com.br/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="Executar vídeo do YouTube"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script>	<script>(()=>{class RocketElementorPreload{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode-wpr",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}t(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this.i(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach(t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this.o(t)}catch(t){}})}o(t){const e=JSON.parse(t.dataset.settings),i=e.m||e.animation_delay||0,n=e[this.animationSettingKeys.find(t=>e[t])];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let o=setTimeout(()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this.l(t,e)},i);window.addEventListener("rocket-startLoading",function(){clearTimeout(o)})}i(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach(t=>{e.forEach(e=>{i.push(t+e)})}),i}l(t,e){this.i().forEach(t=>delete e[t]),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorPreload;requestAnimationFrame(t.t.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorPreload.run)})();</script></body>
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1787899412 -->
